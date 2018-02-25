@@ -1,0 +1,64 @@
+  - platform: darksky
+    api_key: !secret darksky_api_key
+    monitored_conditions:
+      - summary
+      - icon
+      - nearest_storm_distance
+      - precip_intensity
+      - precip_probability
+      - precip_type
+      - temperature
+      - hourly_summary
+      - daily_summary
+    update_interval:
+        days: 0
+        hours: 0
+        minutes: 15
+        seconds: 30
+        milliseconds: 0
+  - platform: pi_hole
+    host: raspberrypi
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /home
+      - type: memory_free
+      - type: processor_use
+      - type: load_1m
+      - type: load_5m
+      - type: load_15m
+  - platform: twitch
+    channels:
+      - lirik
+      - timthetatman
+      - ninja
+      - summit1g
+  - platform: google_travel_time
+    name: Travel to NextIT MKG
+    api_key: !secret google_distance_api
+    origin: place_id:EiwyMTU5IDQzcmQgU3QgU0UsIEdyYW5kIFJhcGlkcywgTUkgNDk1MDgsIFVTQQ
+    destination: place_id:ChIJE69PDwB-GYgR07fD5yxIb08
+  - platform: google_travel_time
+    name: Travel to NextIT GR
+    api_key: !secret google_distance_api
+    origin: place_id:EiwyMTU5IDQzcmQgU3QgU0UsIEdyYW5kIFJhcGlkcywgTUkgNDk1MDgsIFVTQQ
+    destination: place_id:ChIJo-yZNuGwGYgRalS1jOW0C8Q
+  - platform: pollen
+    zip_code: !secret MI_zipcode1
+    monitored_conditions:
+      - allergy_index_today
+      - allergy_index_tomorrow
+      - disease_average_forecasted
+  - platform: haveibeenpwned
+    email: 
+      - !secret email1
+      - !secret email2
+      - !secret email3
+      - !secret email4
+      - !secret email5
+  - platform: crimereports
+    name: Crime in Area
+    radius: 1610
+  # - platform: command_line
+    # name: cpu_temperature
+    # command: "cat /sys/class/thermal/thermal_zone0/temp | awk '{print ((($1*.001) * 9 / 5))+32}'"'

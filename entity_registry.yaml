@@ -1,0 +1,6 @@
+media_player.plex_web_chrome:
+  platform: plex
+  unique_id: 9iqxz96iqi7b1swtv8v754tc
+media_player.plex_web_chrome_2:
+  platform: plex
+  unique_id: ncizoj10lrmmkleainghxbm8

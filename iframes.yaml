@@ -1,0 +1,24 @@
+  configurator:
+    title: Configurator
+    icon: mdi:wrench
+    url: http://192.168.1.99:3218/
+  pihole:
+    title: Pi-hole
+    icon: mdi:network
+    url: http://192.168.1.99/admin/index.php
+  nodered:
+    title: 'Node-Red'
+    icon: 'mdi:shuffle-variant'
+    url: 'http://192.168.1.99:1880/'
+  pfsense:
+    title: pfsense
+    icon: mdi:server-network
+    url: https://192.168.1.254/index.php
+  unifi:
+    title: 'Unifi controller'
+    icon: 'mdi:access-point-network'
+    url: https://192.168.1.50:8443/manage/site/default
+  plex:
+    title: 'Plex Server'
+    icon: 'mdi:plex'
+    url: http://192.168.1.50:32400/web/index.html
