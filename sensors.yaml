@@ -36,13 +36,13 @@
   - platform: google_travel_time
     name: Travel to NextIT MKG
     api_key: !secret google_distance_api
-    origin: place_id:EiwyMTU5IDQzcmQgU3QgU0UsIEdyYW5kIFJhcGlkcywgTUkgNDk1MDgsIFVTQQ
-    destination: place_id:ChIJE69PDwB-GYgR07fD5yxIb08
+    origin: !secret gloc_gr_home
+    destination: !secret gloc_work_mkg
   - platform: google_travel_time
     name: Travel to NextIT GR
     api_key: !secret google_distance_api
-    origin: place_id:EiwyMTU5IDQzcmQgU3QgU0UsIEdyYW5kIFJhcGlkcywgTUkgNDk1MDgsIFVTQQ
-    destination: place_id:ChIJo-yZNuGwGYgRalS1jOW0C8Q
+    origin: !secret gloc_gr_home
+    destination: !secret gloc_work_gr
   - platform: pollen
     zip_code: !secret MI_zipcode1
     monitored_conditions:
