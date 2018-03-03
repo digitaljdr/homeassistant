@@ -157,3 +157,5 @@ notify:
     username: !secret click2send_user
     api_key: !secret click2send_api
     recipient: !secret click2send_sms
+
+switch: !include switch.yaml

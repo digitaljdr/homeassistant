@@ -62,11 +62,3 @@
   # - platform: command_line
     # name: cpu_temperature
     # command: "cat /sys/class/thermal/thermal_zone0/temp | awk '{print ((($1*.001) * 9 / 5))+32}'"'
-  - platform: mqtt
-    name: "Sonoff"
-    command_topic: "cmnd/Sonoff/power"
-    state_topic: "stat/Sonoff/POWER"
-    qos: 1
-    payload_on: "ON"
-    payload_off: "OFF"
-    retain: true

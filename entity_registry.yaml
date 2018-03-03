@@ -4,3 +4,18 @@ media_player.plex_web_chrome:
 media_player.plex_web_chrome_2:
   platform: plex
   unique_id: ncizoj10lrmmkleainghxbm8
+sensor.cold__flu_forecasted_average:
+  platform: pollen
+  unique_id: 49508_cold__flu_forecasted_average
+sensor.allergy_index_tomorrow:
+  platform: pollen
+  unique_id: 49508_allergy_index_tomorrow
+sensor.allergy_index_today:
+  platform: pollen
+  unique_id: 49508_allergy_index_today
+media_player.thunderdome_tv:
+  platform: cast
+  unique_id: f63b8101-d939-db44-1817-72911974dc6f
+media_player.streamin_america:
+  platform: cast
+  unique_id: 6b56c479-f0ec-6f70-3298-3ba862aee3df
