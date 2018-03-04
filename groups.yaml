@@ -68,9 +68,13 @@ weather_tab:
  - group.Weather
  - camera.michigan_radar
  - weather.grand_rapids_home
- 
 twitch_tab:
  view: yes
  name: Twitch
  entities:
  - group.twitch
+switches_tab:
+ view: yes
+ name: Switches
+ entities:
+ - group.all_switches
